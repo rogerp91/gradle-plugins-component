@@ -19,9 +19,14 @@ allprojects {
 
 gradlePlugin {
     plugins {
-        gradle_plugins_component {
-            id = "com.github.rogerp91.gradle-plugins-component"
+        main {
+            id = "com.github.rogerp91.main"
             implementationClass = "com.github.rogerp91.MainPlugin"
+        }
+
+        kt {
+            id = "com.github.rogerp91.kt"
+            implementationClass = "com.github.rogerp91.KotlinPlugin"
         }
     }
 }
