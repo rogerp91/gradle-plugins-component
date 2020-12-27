@@ -1,9 +1,11 @@
 plugins {
     id "groovy"
+    id 'java-gradle-plugin'
+    id 'maven-publish'
 }
 
 group "com.github.rogerp91"
-version "0.0.1-SNAPSHOT"
+version "0.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()
