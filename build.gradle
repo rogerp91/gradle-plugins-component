@@ -17,6 +17,14 @@ allprojects {
     }
 }
 
+gradlePlugin {
+    plugins {
+        create("MainPlugin") {
+            id = "com.github.rogerp91.gradle-plugins-component"
+            implementationClass = "com.github.rogerp91.MainPlugin.MainPlugin"
+        }
+    }
+}
 dependencies {
     compile gradleApi()
     compile localGroovy()
