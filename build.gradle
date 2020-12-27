@@ -19,9 +19,9 @@ allprojects {
 
 gradlePlugin {
     plugins {
-        create("MainPlugin") {
+        gradle_plugins_component {
             id = "com.github.rogerp91.gradle-plugins-component"
-            implementationClass = "com.github.rogerp91.MainPlugin.MainPlugin"
+            implementationClass = "com.github.rogerp91.MainPlugin"
         }
     }
 }
